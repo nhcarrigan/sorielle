@@ -15,7 +15,7 @@ const handlers: { _default: Command } & Record<string, Command> = {
       content: `Unknown command: ${interaction.commandName}`,
     });
   },
-  about:  about,
+  about:     about,
   configure: config,
 };
 

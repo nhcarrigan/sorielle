@@ -58,6 +58,20 @@ export const config: Command = async(sorielle, interaction) => {
       return;
     }
     const seconds = interaction.options.getInteger("timeout", true);
+    await sorielle.database.vents.upsert({
+      create: {
+        channelId: channel.id,
+        serverId:  interaction.guild.id,
+        ttl:       seconds,
+      },
+      update: {
+        channelId: channel.id,
+        ttl:       seconds,
+      },
+      where: {
+        serverId: interaction.guild.id,
+      },
+    });
     const components = [
       new ContainerBuilder().addTextDisplayComponents(
         new TextDisplayBuilder().setContent(
