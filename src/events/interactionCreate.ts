@@ -16,7 +16,7 @@ const handlers: { _default: Command } & Record<string, Command> = {
     });
   },
   about:  about,
-  config: config,
+  configure: config,
 };
 
 /**
