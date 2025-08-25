@@ -19,7 +19,7 @@ const html = `<!DOCTYPE html>
   <body>
     <main>
     <h1>Sorielle</h1>
-    <img src="https://cdn.nhcarrigan.com/new-avatars/sorielle.png" width="250" alt="Sorielle" />
+    <img src="https://cdn.nhcarrigan.com/new-avatars/sorielle-full.png" width="250" alt="Sorielle" />
     <section>
       <p>Discord bot that automatically deletes messages in a configured "venting" channel after a specific amount of time.</p>
       <a href="https://discord.com/oauth2/authorize?client_id=1391489982887362761" class="social-button discord-button" style="display: inline-block; background-color: #5865F2; color: white; padding: 10px 20px; text-decoration: none; border-radius: 4px; margin: 5px;">
